@@ -1,6 +1,6 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
-import { getFirestore } from "firebase/firestore";
+import { initializeFirestore, getFirestore, memoryLocalCache } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
@@ -22,8 +22,14 @@ export const adminApp = app;
 export const storage = getStorage(app);
 export const adminStorage = storage;
 
-// Firestore specifically for Current Affairs Database Tables
-export const db = getFirestore(app);
+// Firestore specifically configured with memoryLocalCache to prevent tab lock/closing errors in Next.js
+let dbInstance;
+try {
+  dbInstance = initializeFirestore(app, { localCache: memoryLocalCache() });
+} catch {
+  dbInstance = getFirestore(app);
+}
+export const db = dbInstance;
 export const adminDb = db;
 
 // Firebase Auth for unified identity management
