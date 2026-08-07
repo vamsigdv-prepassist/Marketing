@@ -52,7 +52,7 @@ export default function Home() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto animate-mobile-enter"
             style={{ animationDelay: '0.3s' }}
           >
-            <a href="http://localhost:3000/login" onClick={(e) => handleMobileRedirect(e, 'login')} className="w-full sm:w-auto px-8 py-4 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-base transition-all flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/30">
+            <a href="https://dashboard.prepassist.in/login" onClick={(e) => handleMobileRedirect(e, 'login')} className="w-full sm:w-auto px-8 py-4 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-base transition-all flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/30">
               Deploy Your Workspace <ChevronRight className="w-4 h-4" />
             </a>
             <Link href="#platform" className="w-full sm:w-auto px-8 py-4 rounded-full bg-white border border-slate-200 text-slate-700 font-bold text-base hover:bg-slate-50 transition-all flex items-center justify-center shadow-sm">
@@ -196,7 +196,7 @@ export default function Home() {
                        Upload any un-formatted PDF or feed a massive topic to the engine. Watch as it instantly compiles rigorous Prelims matrices.
                     </p>
                  </div>
-                 <a href="http://localhost:3000/quiz" className="px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors shadow-md">
+                 <a href="https://dashboard.prepassist.in/quiz" className="px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors shadow-md">
                     Generate Quiz
                  </a>
               </div>
@@ -215,7 +215,7 @@ export default function Home() {
                Stop preparing manually. Integrate with PrepAssist V2 and radically multiply your daily execution speed.
             </p>
             <div className="flex items-center gap-4">
-               <a href="http://localhost:3000/login" onClick={(e) => handleMobileRedirect(e, 'login')} className="px-8 py-4 rounded-full bg-indigo-600 text-white hover:bg-indigo-500 transition-colors font-bold text-lg shadow-lg shadow-indigo-600/30">
+               <a href="https://dashboard.prepassist.in/login" onClick={(e) => handleMobileRedirect(e, 'login')} className="px-8 py-4 rounded-full bg-indigo-600 text-white hover:bg-indigo-500 transition-colors font-bold text-lg shadow-lg shadow-indigo-600/30">
                   Start Your Free Trial
                </a>
                <Link href="/pricing" className="px-8 py-4 rounded-full bg-white border border-slate-200 text-slate-800 hover:bg-slate-50 transition-colors font-bold text-lg shadow-sm">
@@ -243,7 +243,7 @@ export default function Home() {
                 <Link href="/privacy-policy" className="hover:text-slate-800 cursor-pointer transition-colors">Privacy Policy</Link>
                 <Link href="/terms" className="hover:text-slate-800 cursor-pointer transition-colors">Terms & Conditions</Link>
                 <Link href="/delete-account" className="hover:text-slate-800 cursor-pointer transition-colors">Delete Account</Link>
-                <a href="http://localhost:3000/admin/login" className="hover:text-indigo-600 transition-colors">Admin Gateway</a>
+                <a href="https://dashboard.prepassist.in/admin/login" className="hover:text-indigo-600 transition-colors">Admin Gateway</a>
             </div>
          </div>
       </footer>

@@ -8,7 +8,7 @@ import Header from "@/components/Header";
 
 export default function PricingPage() {
   const [isLocal, setIsLocal] = useState(false);
-  const loginUrl = "http://localhost:3000/login";
+  const loginUrl = "https://dashboard.prepassist.in/login";
 
   useEffect(() => {
     if (typeof window !== "undefined") {

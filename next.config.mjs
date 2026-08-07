@@ -32,17 +32,17 @@ const nextConfig = {
     return [
       {
         source: '/login',
-        destination: 'http://localhost:3000/login',
+        destination: 'https://dashboard.prepassist.in/login',
         permanent: false,
       },
       {
         source: '/quiz',
-        destination: 'http://localhost:3000/quiz',
+        destination: 'https://dashboard.prepassist.in/quiz',
         permanent: false,
       },
       {
         source: '/dashboard',
-        destination: 'http://localhost:3000/dashboard',
+        destination: 'https://dashboard.prepassist.in/dashboard',
         permanent: false,
       }
     ];

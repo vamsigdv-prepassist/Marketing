@@ -60,10 +60,10 @@ export default function Header() {
           </div>
           
           <div className="flex items-center gap-3">
-            <a href="http://localhost:3000/login" onClick={(e) => handleMobileRedirect(e, 'login')} className="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors hidden sm:block">
+            <a href="https://dashboard.prepassist.in/login" onClick={(e) => handleMobileRedirect(e, 'login')} className="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors hidden sm:block">
               Sign In
             </a>
-            <a href="http://localhost:3000/login?mode=register" onClick={(e) => handleMobileRedirect(e, 'register')} className="hidden sm:flex px-5 py-2.5 rounded-full bg-slate-900 text-white hover:bg-slate-800 font-bold text-sm transition-all items-center gap-2 shadow-md hover:shadow-lg">
+            <a href="https://dashboard.prepassist.in/login?mode=register" onClick={(e) => handleMobileRedirect(e, 'register')} className="hidden sm:flex px-5 py-2.5 rounded-full bg-slate-900 text-white hover:bg-slate-800 font-bold text-sm transition-all items-center gap-2 shadow-md hover:shadow-lg">
               Register <ChevronRight className="w-4 h-4"/>
             </a>
             <button 
@@ -87,8 +87,8 @@ export default function Header() {
             <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Services</Link>
             <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Blogs</Link>
             <div className="flex flex-col gap-4 mt-6">
-              <a href="http://localhost:3000/login" onClick={(e) => { handleMobileRedirect(e, 'login'); setIsMobileMenuOpen(false); }} className="w-full py-4 text-center rounded-2xl bg-indigo-50 text-indigo-600 font-black">Sign In to Workspace</a>
-              <a href="http://localhost:3000/login?mode=register" onClick={(e) => { handleMobileRedirect(e, 'register'); setIsMobileMenuOpen(false); }} className="w-full py-4 text-center rounded-2xl bg-slate-900 text-white font-black flex items-center justify-center gap-2 shadow-lg">Register Account <ChevronRight className="w-5 h-5"/></a>
+              <a href="https://dashboard.prepassist.in/login" onClick={(e) => { handleMobileRedirect(e, 'login'); setIsMobileMenuOpen(false); }} className="w-full py-4 text-center rounded-2xl bg-indigo-50 text-indigo-600 font-black">Sign In to Workspace</a>
+              <a href="https://dashboard.prepassist.in/login?mode=register" onClick={(e) => { handleMobileRedirect(e, 'register'); setIsMobileMenuOpen(false); }} className="w-full py-4 text-center rounded-2xl bg-slate-900 text-white font-black flex items-center justify-center gap-2 shadow-lg">Register Account <ChevronRight className="w-5 h-5"/></a>
             </div>
           </div>
         </div>
