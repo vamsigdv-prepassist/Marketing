@@ -18,7 +18,7 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
   const normalizedPathname = pathname.endsWith('/') && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
   const isAdminRoute = pathname.startsWith("/admin");
 
-  const publicRoutes = ["/", "/login", "/admin/login", "/pricing", "/privacy-policy", "/terms", "/support", "/delete-account", "/payment-success", "/payment-failed", "/services", "/services/aiforupscpreparation", "/services/upscaiapp", "/services/aiupscpreparationplatform", "/services/upscmainanswerevaluationai", "/services/pdftoquizgeneratorupsc", "/services/upscnotesmakerai", "/services/aiupsctestseries", "/services/upscaianswerwritingpractice", "/services/upsccurrentaffairsaitool", "/services/prepassistupscapp", "/services/upscmainsanswercheckeronline", "/services/aistudyappforupscaspirants", "/services/bestaiappforupsc2025", "/services/bestaitoolforupscpreparation", "/services/upscpreparationappwithai", "/services/aivstraditionalupsccoaching", "/services/freeaitoolforupscnotes", "/services/upscaimocktestplatform", "/services/bestappforupscmainswritingpractice", "/services/upscstudyappwithcurrentaffairs", "/services/aipoweredupsccoachingalternative", "/services/upscappwithpdfquizmaker", "/services/prepassistvsunacademyai"];
+  const publicRoutes = ["/login", "/admin/login"];
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (u) => {

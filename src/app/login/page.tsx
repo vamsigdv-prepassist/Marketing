@@ -131,15 +131,7 @@ export default function AdminLogin() {
             </button>
          </form>
          
-         <div className="mt-8 flex flex-col items-center justify-center gap-4 pt-6 border-t border-white/5">
-             <div className="flex items-center gap-2 opacity-50">
-                <ShieldCheck className="w-3 h-3 text-white" />
-                <span className="text-[10px] text-white uppercase tracking-widest font-black">256-Bit SSL Encrypted Connection</span>
-             </div>
-             <Link href="/login" className="text-[10px] text-white/30 hover:text-white/50 uppercase tracking-widest font-black transition-colors flex items-center gap-2 mt-2">
-                <User className="w-3 h-3" /> Return to Student Portal
-             </Link>
-         </div>
+
       </motion.div>
     </div>
   );

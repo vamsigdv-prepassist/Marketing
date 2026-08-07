@@ -7,6 +7,8 @@ import { addCurrentAffair, bulkAddCurrentAffairs, fetchAffairsByDate, deleteCurr
 import { db } from "@/lib/firebase";
 import { collection, getDocs, query, orderBy, limit, updateDoc, setDoc, doc } from "firebase/firestore";
 import { getApiUrl } from "@/lib/api";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 export default function CurrentAffairsAdmin() {
    const [mounted, setMounted] = useState(false);
@@ -718,32 +720,22 @@ export default function CurrentAffairsAdmin() {
                            <div key={i} className="bg-[#020617]/50 rounded-2xl p-6 border border-white/5 shadow-inner">
                               <h4 className="font-black text-lg mb-2">{affair.title}</h4>
                               <div className="flex gap-2 mb-4">{affair.tags?.map(t => <span key={t} className="text-[10px] uppercase font-bold tracking-widest bg-white/10 text-white/60 px-2 py-1 rounded-md">{t}</span>)}</div>
-                               <div className="text-white/70 text-sm leading-relaxed">
-                                  {affair.content?.split('\n').map((line, idx) => {
-                                     const trimmed = line.trim();
-                                     if (trimmed.startsWith('### ')) return <h5 key={idx} className="text-sm font-bold text-sky-400 mt-4 mb-1">{trimmed.replace('### ', '')}</h5>;
-                                     if (trimmed.startsWith('## ')) return <h4 key={idx} className="text-base font-bold text-sky-300 mt-4 mb-1">{trimmed.replace('## ', '')}</h4>;
-                                     if (trimmed.startsWith('# ')) return <h3 key={idx} className="text-lg font-bold text-sky-200 mt-4 mb-2">{trimmed.replace('# ', '')}</h3>;
-                                     if (trimmed.length === 0) return <div key={idx} className="h-1" />;
-                                     const isBullet = trimmed.startsWith('* ') || trimmed.startsWith('- ');
-                                     const cleanLine = isBullet ? trimmed.substring(2) : line;
-                                     const parts = cleanLine.split(/(\*\*.*?\*\*)/g);
-                                     const lineContent = parts.map((p, j) => {
-                                        if (p.startsWith('**') && p.endsWith('**')) {
-                                           return <strong key={j} className="font-bold text-white">{p.slice(2, -2)}</strong>;
-                                        }
-                                        return p;
-                                     });
-                                     if (isBullet) {
-                                        return (
-                                           <div key={idx} className="flex items-start gap-2 pl-2 my-1 text-white/80">
-                                              <span className="text-sky-400 font-bold">•</span>
-                                              <div>{lineContent}</div>
-                                           </div>
-                                        );
-                                     }
-                                     return <p key={idx} className="mb-2 text-white/80">{lineContent}</p>;
-                                  })}
+                               <div className="text-white/70 text-sm leading-relaxed mb-6 space-y-2">
+                                  <ReactMarkdown 
+                                     remarkPlugins={[remarkGfm]}
+                                     components={{
+                                        h3: ({node, ...props}) => <h3 className="text-lg font-bold text-sky-200 mt-4 mb-2" {...props} />,
+                                        h4: ({node, ...props}) => <h4 className="text-base font-bold text-sky-300 mt-4 mb-1" {...props} />,
+                                        h5: ({node, ...props}) => <h5 className="text-sm font-bold text-sky-400 mt-4 mb-1" {...props} />,
+                                        p: ({node, ...props}) => <p className="mb-2 text-white/80" {...props} />,
+                                        ul: ({node, ...props}) => <ul className="list-disc pl-5 mb-4 text-white/80 space-y-1" {...props} />,
+                                        ol: ({node, ...props}) => <ol className="list-decimal pl-5 mb-4 text-white/80 space-y-1" {...props} />,
+                                        li: ({node, ...props}) => <li className="" {...props} />,
+                                        strong: ({node, ...props}) => <strong className="font-bold text-white" {...props} />,
+                                     }}
+                                  >
+                                     {affair.content ? affair.content.replace(/\\n/g, '\n') : ""}
+                                  </ReactMarkdown>
                                </div>
                            </div>
                         ))}
@@ -771,7 +763,23 @@ export default function CurrentAffairsAdmin() {
                                  <div><h4 className="text-xl font-black text-indigo-100">{affair.title}</h4><p className="text-xs font-bold text-sky-400 mt-1 flex items-center gap-1"><CalendarDays className="w-3 h-3" /> {affair.publishDate || "Today"}</p></div>
                                  <span className="bg-indigo-500/20 text-indigo-400 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full border border-indigo-500/30">{affair.source}</span>
                               </div>
-                              <p className="text-white/60 text-sm leading-relaxed mb-6 whitespace-pre-wrap">{affair.content}</p>
+                              <div className="text-white/60 text-sm leading-relaxed mb-6 space-y-2">
+                                 <ReactMarkdown 
+                                    remarkPlugins={[remarkGfm]}
+                                    components={{
+                                       h3: ({node, ...props}) => <h3 className="text-lg font-bold text-sky-200 mt-4 mb-2" {...props} />,
+                                       h4: ({node, ...props}) => <h4 className="text-base font-bold text-sky-300 mt-4 mb-1" {...props} />,
+                                       h5: ({node, ...props}) => <h5 className="text-sm font-bold text-sky-400 mt-4 mb-1" {...props} />,
+                                       p: ({node, ...props}) => <p className="mb-2 text-white/80" {...props} />,
+                                       ul: ({node, ...props}) => <ul className="list-disc pl-5 mb-4 text-white/80 space-y-1" {...props} />,
+                                       ol: ({node, ...props}) => <ol className="list-decimal pl-5 mb-4 text-white/80 space-y-1" {...props} />,
+                                       li: ({node, ...props}) => <li className="" {...props} />,
+                                       strong: ({node, ...props}) => <strong className="font-bold text-white" {...props} />,
+                                    }}
+                                 >
+                                    {affair.content ? affair.content.replace(/\\n/g, '\n') : ""}
+                                 </ReactMarkdown>
+                              </div>
                               <div className="flex items-center justify-between pt-4 border-t border-white/5">
                                  <div className="flex gap-2">{affair.tags?.map((t, i) => (<span key={i} className="text-[10px] font-bold uppercase tracking-widest bg-white/5 text-sky-400/80 px-2 py-1 rounded-md border border-white/5">{t}</span>))}</div>
                               </div>
