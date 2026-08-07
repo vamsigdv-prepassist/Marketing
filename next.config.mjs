@@ -44,11 +44,6 @@ const nextConfig = {
         source: '/dashboard',
         destination: 'http://localhost:3000/dashboard',
         permanent: false,
-      },
-      {
-        source: '/pricing',
-        destination: 'http://localhost:3000/pricing',
-        permanent: false,
       }
     ];
   },

@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <>
       {/* Ultra-Premium Navigation */}
-      <nav className="fixed w-full z-50 top-0 border-b border-slate-200/60 bg-white/80 backdrop-blur-3xl transition-all duration-300">
+      <nav className="fixed w-full z-50 top-0 border-b border-slate-200/60 bg-white transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center group">
             <Image 
@@ -54,7 +54,7 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-8">
             <a href="/#platform" className={navLinkClass("/#platform")}>The Platform</a>
             <a href="/#features" className={navLinkClass("/#features")}>Capabilities</a>
-            <a href="http://localhost:3000/pricing" className={navLinkClass("/pricing")}>Billing</a>
+            <Link href="/pricing" className={navLinkClass("/pricing")}>Billing</Link>
             <Link href="/services" className={navLinkClass("/services")}>Services</Link>
             <Link href="/blog" className={navLinkClass("/blog")}>Blogs</Link>
           </div>
@@ -69,7 +69,7 @@ export default function Header() {
             <button 
               aria-label="Toggle Mobile Menu" 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-              className="md:hidden p-2 text-slate-600 rounded-lg hover:bg-slate-100 transition-colors"
+              className="md:!hidden p-2 text-slate-600 rounded-lg hover:bg-slate-100 transition-colors"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -83,7 +83,7 @@ export default function Header() {
           <div className="flex flex-col gap-6 text-xl font-bold tracking-tight text-slate-800">
             <Link href="/#platform" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">The Platform</Link>
             <Link href="/#features" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Capabilities</Link>
-            <a href="http://localhost:3000/pricing" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Billing Matrices</a>
+            <Link href="/pricing" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Billing Matrices</Link>
             <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Services</Link>
             <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} className="border-b border-slate-100 pb-4">Blogs</Link>
             <div className="flex flex-col gap-4 mt-6">

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+
 import { BrainCircuit, PenTool, Globe, ChevronRight, Target, Cloud, Database, Lock, Sparkles, Activity, ShieldCheck, Network, CheckCircle2, Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -27,39 +27,30 @@ export default function Home() {
         
         {/* Spotlight Hero Section */}
         <section className="text-center pt-20 pb-16 md:pt-32 md:pb-24 flex flex-col items-center w-full max-w-5xl">
-          <motion.div
-             initial={{ opacity: 0, y: 10 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.5 }}
-             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-200 text-xs font-bold text-indigo-700 mb-8 tracking-widest uppercase shadow-sm"
+          <div
+             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-200 text-xs font-bold text-indigo-700 mb-8 tracking-widest uppercase shadow-sm animate-mobile-enter"
           >
             <Sparkles className="w-3 h-3 text-amber-500" /> PrepAssist V2 is Live
-          </motion.div>
+          </div>
 
-          <motion.h1 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-5xl md:text-7xl lg:text-[84px] font-black tracking-tighter text-slate-900 mb-8 leading-[1.05]"
+          <h1 
+            className="text-5xl md:text-7xl lg:text-[84px] font-black tracking-tighter text-slate-900 mb-8 leading-[1.05] animate-mobile-enter"
+            style={{ animationDelay: '0.1s' }}
           >
             The ultimate AI engine for <br className="hidden md:block"/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-sky-500 to-emerald-500 pr-2">UPSC preparation.</span>
-          </motion.h1>
+          </h1>
           
-          <motion.p 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg md:text-xl text-slate-600 mb-12 max-w-2xl mx-auto font-medium leading-relaxed"
+          <p 
+            className="text-lg md:text-xl text-slate-600 mb-12 max-w-2xl mx-auto font-medium leading-relaxed animate-mobile-enter"
+            style={{ animationDelay: '0.2s' }}
           >
             Synthesize vast syllabuses, automate Mains evaluation, and generate precision cloud notes instantly. Built specifically for rankers.
-          </motion.p>
+          </p>
           
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto"
+          <div 
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto animate-mobile-enter"
+            style={{ animationDelay: '0.3s' }}
           >
             <a href="http://localhost:3000/login" onClick={(e) => handleMobileRedirect(e, 'login')} className="w-full sm:w-auto px-8 py-4 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-base transition-all flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/30">
               Deploy Your Workspace <ChevronRight className="w-4 h-4" />
@@ -67,15 +58,13 @@ export default function Home() {
             <Link href="#platform" className="w-full sm:w-auto px-8 py-4 rounded-full bg-white border border-slate-200 text-slate-700 font-bold text-base hover:bg-slate-50 transition-all flex items-center justify-center shadow-sm">
               Explore Architecture
             </Link>
-          </motion.div>
+          </div>
         </section>
 
         {/* Mobile App Download Banner - Ultra Premium Revamp */}
-        <motion.div 
-           initial={{ opacity: 0, y: 10 }}
-           animate={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.7, delay: 0.4 }}
-           className="w-full max-w-5xl mx-auto -mt-10 mb-24 relative z-20 px-4"
+        <div 
+           className="w-full max-w-5xl mx-auto -mt-10 mb-24 relative z-20 px-4 animate-mobile-enter"
+           style={{ animationDelay: '0.4s' }}
         >
            <div className="bg-gradient-to-br from-[#0B0F19] via-[#111827] to-[#0B0F19] rounded-[2.5rem] p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-12 shadow-[0_20px_60px_-15px_rgba(99,102,241,0.4)] overflow-hidden relative border border-slate-800">
               
@@ -122,7 +111,7 @@ export default function Home() {
               </div>
 
            </div>
-        </motion.div>
+        </div>
 
         {/* Brand Banner */}
         <section className="w-full py-16 flex flex-col items-center justify-center text-center mb-32">
@@ -229,9 +218,9 @@ export default function Home() {
                <a href="http://localhost:3000/login" onClick={(e) => handleMobileRedirect(e, 'login')} className="px-8 py-4 rounded-full bg-indigo-600 text-white hover:bg-indigo-500 transition-colors font-bold text-lg shadow-lg shadow-indigo-600/30">
                   Start Your Free Trial
                </a>
-               <a href="http://localhost:3000/pricing" className="px-8 py-4 rounded-full bg-white border border-slate-200 text-slate-800 hover:bg-slate-50 transition-colors font-bold text-lg shadow-sm">
+               <Link href="/pricing" className="px-8 py-4 rounded-full bg-white border border-slate-200 text-slate-800 hover:bg-slate-50 transition-colors font-bold text-lg shadow-sm">
                   View Pricing Models
-               </a>
+               </Link>
             </div>
 
             {/* Small App Store Badges inside CTA */}
