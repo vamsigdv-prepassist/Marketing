@@ -28,6 +28,30 @@ const nextConfig = {
     config.resolve.alias['@'] = path.join(__dirname, 'src');
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/login',
+        destination: 'http://localhost:3000/login',
+        permanent: false,
+      },
+      {
+        source: '/quiz',
+        destination: 'http://localhost:3000/quiz',
+        permanent: false,
+      },
+      {
+        source: '/dashboard',
+        destination: 'http://localhost:3000/dashboard',
+        permanent: false,
+      },
+      {
+        source: '/pricing',
+        destination: 'http://localhost:3000/pricing',
+        permanent: false,
+      }
+    ];
+  },
   async headers() {
     return [
       {
