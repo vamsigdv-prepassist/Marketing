@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC Mains Answer Checker Online | Try PrepAssist",
-  description: "Check your UPSC mains answers online with AI-based evaluation. Get instant feedback on content, structure & scoring. Try free.",
+  title: servicesMetadata['upsc-mains-answer-checker-online']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-mains-answer-checker-online']?.metaDescription || "",
 };
 
 export default function UPSCMainsAnswerCheckerOnlinePage() {

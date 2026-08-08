@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC Concept Explanation App: Understanding Before Memorising | PrepAssist",
-  description: "Transform complex UPSC topics into clear, interactive explanations. Pair deep conceptual clarity with custom PDF quizzes, active recall & progress tracking.",
+  title: servicesMetadata['upsc-concept-explanation-app']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-concept-explanation-app']?.metaDescription || "",
 };
 
 export default function UPSCConceptExplanationAppPage() {

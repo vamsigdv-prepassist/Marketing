@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "Explain UPSC Topics With AI: A 6-Step Method | PrepAssist",
-  description: "Master a repeatable 6-step method to explain UPSC topics with AI. Move from clear prompts to plain language, syllabus links, PDF quizzes & Mains feedback.",
+  title: servicesMetadata['explain-upsc-topics-with-ai']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['explain-upsc-topics-with-ai']?.metaDescription || "",
 };
 
 export default function ExplainUPSCTopicsWithAIPage() {

@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "Free AI Tool for UPSC Notes | Try PrepAssist Now",
-  description: "Create UPSC notes for free with AI. PrepAssist turns study material into concise, exam-ready notes in minutes. Try the tool now.",
+  title: servicesMetadata['free-ai-tool-for-upsc-notes']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['free-ai-tool-for-upsc-notes']?.metaDescription || "",
 };
 
 export default function FreeAIToolForUPSCNotesPage() {

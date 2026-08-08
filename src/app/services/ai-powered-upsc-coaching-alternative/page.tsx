@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI-Powered UPSC Coaching Alternative | PrepAssist",
-  description: "Looking for an alternative to traditional UPSC coaching? PrepAssist offers AI-powered notes, tests & mains evaluation. Try now.",
+  title: servicesMetadata['ai-powered-upsc-coaching-alternative']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-powered-upsc-coaching-alternative']?.metaDescription || "",
 };
 
 export default function AIPoweredUPSCCoachingAlternativePage() {

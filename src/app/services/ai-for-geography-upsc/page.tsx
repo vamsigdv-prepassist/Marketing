@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI for Geography UPSC: Mapping Success One Concept at a Time | PrepAssist",
-  description: "Master Physical, Indian, Human & Economic Geography for UPSC Prelims & Mains using AI process explanations, map practice, active quizzes & Mains answer evaluation.",
+  title: servicesMetadata['ai-for-geography-upsc']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-for-geography-upsc']?.metaDescription || "",
 };
 
 export default function AIForGeographyUPSCPage() {

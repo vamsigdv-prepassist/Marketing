@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI vs Traditional UPSC Coaching: Which Wins?",
-  description: "Compare AI-powered UPSC prep with traditional coaching. See how PrepAssist offers faster feedback & flexible study at lower cost.",
+  title: servicesMetadata['ai-vs-traditional-upsc-coaching']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-vs-traditional-upsc-coaching']?.metaDescription || "",
 };
 
 export default function AIVsTraditionalUPSCCoachingPage() {

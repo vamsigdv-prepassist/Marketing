@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC Topic-Wise AI Explanation: Tour Across Syllabus | PrepAssist",
-  description: "Explore topic-wise AI explanations tailored by subject: History as stories, Polity as systems, Economy as mechanisms, and Geography as processes.",
+  title: servicesMetadata['upsc-topic-wise-ai-explanation']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-topic-wise-ai-explanation']?.metaDescription || "",
 };
 
 export default function UPSCTopicWiseAIExplanationPage() {

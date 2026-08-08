@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "Subject-Wise AI Mentor UPSC: One Guide, Tuned to Every Paper | PrepAssist",
-  description: "Experience paper-tailored UPSC preparation using a Subject-Wise AI Mentor for History, Polity, Economy, Geography & Ethics with subject-tuned quizzes & Mains feedback.",
+  title: servicesMetadata['subject-wise-ai-mentor-upsc']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['subject-wise-ai-mentor-upsc']?.metaDescription || "",
 };
 
 export default function SubjectWiseAIMentorUPSCPage() {

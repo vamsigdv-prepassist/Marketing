@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC Notes Maker AI for Aspirants | PrepAssist",
-  description: "Create concise, exam-ready UPSC notes with AI. PrepAssist summarizes lengthy material into structured notes in minutes. Try now.",
+  title: servicesMetadata['upsc-notes-maker-ai']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-notes-maker-ai']?.metaDescription || "",
 };
 
 export default function UPSCNotesMakerAIPage() {

@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI Mentor for Civil Services: Guidance That Stays With You | PrepAssist",
-  description: "Discover how an AI Mentor for Civil Services provides 24/7 doubt resolution, Mains answer writing feedback, and progress tracking for UPSC self-study aspirants.",
+  title: servicesMetadata['ai-mentor-for-civil-services']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-mentor-for-civil-services']?.metaDescription || "",
 };
 
 export default function AIMentorForCivilServicesPage() {

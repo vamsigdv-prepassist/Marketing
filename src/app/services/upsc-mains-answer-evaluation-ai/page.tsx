@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC Mains Answer Evaluation AI Tool | PrepAssist",
-  description: "Get your UPSC mains answers evaluated instantly with AI. Detailed feedback on structure, content & scoring. Try the tool free.",
+  title: servicesMetadata['upsc-mains-answer-evaluation-ai']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-mains-answer-evaluation-ai']?.metaDescription || "",
 };
 
 export default function UPSCMainsAnswerEvaluationAIPage() {

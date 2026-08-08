@@ -355,32 +355,6 @@ export default function ServicesPage() {
             </div>
           </motion.div>
 
-          {/* New Card: UPSC Paragraph-Wise Notes */}
-          <motion.div
-            whileHover={{ y: -8, scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-            <div className="relative z-10 flex flex-col h-full items-center w-full">
-              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
-                <Sparkles size={28} />
-              </div>
-              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
-                UPSC Paragraph-Wise Notes: The Old Way and the Smarter Way
-              </h2>
-              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
-                Compact Understanding-First Notes, Rapid Revision, Custom PDF Quizzes & Mains Answer Review
-              </p>
-              <Link
-                href="/services/upsc-paragraph-wise-notes"
-                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
-              >
-                <span>View details</span>
-                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-          </motion.div>
 
           {/* New Card: Explain UPSC Topics With AI */}
           <motion.div
@@ -490,32 +464,6 @@ export default function ServicesPage() {
             </div>
           </motion.div>
 
-          {/* New Card: Line-by-Line Explanation UPSC */}
-          <motion.div
-            whileHover={{ y: -8, scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-            <div className="relative z-10 flex flex-col h-full items-center w-full">
-              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
-                <Sparkles size={28} />
-              </div>
-              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
-                Line-by-Line Explanation UPSC: Reading Difficult Texts Without Getting Lost
-              </h2>
-              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
-                Sentence-by-Sentence NCERT & Editorial Unpacking, Custom PDF Quizzes & Mains Answer Feedback
-              </p>
-              <Link
-                href="/services/line-by-line-explanation-upsc"
-                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
-              >
-                <span>View details</span>
-                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-          </motion.div>
 
           {/* New Card: UPSC Concept Explanation App */}
           <motion.div

@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI for Polity Preparation UPSC: Turning the Constitution Into Clarity | PrepAssist",
-  description: "Master Indian Polity for UPSC Prelims & Mains using AI. Learn constitutional concepts, connect static syllabus to current affairs, and practice Mains answer evaluation.",
+  title: servicesMetadata['ai-for-polity-preparation-upsc']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-for-polity-preparation-upsc']?.metaDescription || "",
 };
 
 export default function AIForPolityPreparationUPSCPage() {

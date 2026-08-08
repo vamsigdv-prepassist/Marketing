@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "prepassist-v2"
+  },
+  "targets": {
+    "prepassist-v2": {
+      "hosting": {
+        "marketing-prepassist": [
+          "marketing-prepassist"
+        ]
+      }
+    }
+  }
+}

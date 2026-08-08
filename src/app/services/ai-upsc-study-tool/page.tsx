@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI UPSC Study Tool: Smarter Prep for CSE Aspirants | PrepAssist",
-  description: "Boost your UPSC Civil Services preparation with an AI study tool. Evaluate Mains answers in minutes, generate quizzes from PDFs, and track progress.",
+  title: servicesMetadata['ai-upsc-study-tool']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-upsc-study-tool']?.metaDescription || "",
 };
 
 export default function AIUPSCStudyToolPage() {

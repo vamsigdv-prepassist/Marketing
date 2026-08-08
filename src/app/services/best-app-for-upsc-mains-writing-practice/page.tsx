@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "Best App for UPSC Mains Writing Practice | PrepAssist",
-  description: "Practice UPSC mains answer writing with instant AI feedback. PrepAssist helps refine structure, content & speed. Try the app today.",
+  title: servicesMetadata['best-app-for-upsc-mains-writing-practice']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['best-app-for-upsc-mains-writing-practice']?.metaDescription || "",
 };
 
 export default function BestAppForUPSCMainsWritingPracticePage() {

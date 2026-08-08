@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC Depth Study Tool: Follow Topics All The Way Down | PrepAssist",
-  description: "Descend through 4 layers of UPSC depth: Surface, Causes, Dimensions & Connections. Generate PDF quizzes & refine Mains answer writing with AI.",
+  title: servicesMetadata['upsc-depth-study-tool']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-depth-study-tool']?.metaDescription || "",
 };
 
 export default function UPSCDepthStudyToolPage() {

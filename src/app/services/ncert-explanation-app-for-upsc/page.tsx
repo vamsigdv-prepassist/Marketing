@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "NCERT Explanation App for UPSC: Real Answers for Aspirants | PrepAssist",
-  description: "Get practical, honest answers about NCERT explanation apps for UPSC. Restore classroom teaching, pair explanations with PDF quizzes & Mains answer feedback.",
+  title: servicesMetadata['ncert-explanation-app-for-upsc']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ncert-explanation-app-for-upsc']?.metaDescription || "",
 };
 
 export default function NCERTExplanationAppForUPSCPage() {

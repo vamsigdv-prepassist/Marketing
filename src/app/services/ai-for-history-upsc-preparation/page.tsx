@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI for History UPSC Preparation: From Harappa to Independence | PrepAssist",
-  description: "Master Ancient, Medieval, Modern History & Art Culture for UPSC Prelims & Mains using AI timelines, active retrieval quizzes, and Mains answer evaluation.",
+  title: servicesMetadata['ai-for-history-upsc-preparation']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-for-history-upsc-preparation']?.metaDescription || "",
 };
 
 export default function AIForHistoryUPSCPreparationPage() {

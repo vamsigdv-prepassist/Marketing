@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC AI Mock Test Platform for Aspirants | PrepAssist",
-  description: "Practice on an AI-powered UPSC mock test platform built for real exam conditions. Instant scoring & analysis. Join today.",
+  title: servicesMetadata['upsc-ai-mock-test-platform']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-ai-mock-test-platform']?.metaDescription || "",
 };
 
 export default function UPSCAIMockTestPlatformPage() {

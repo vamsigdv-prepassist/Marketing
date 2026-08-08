@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "PrepAssist vs Unacademy AI: Full Comparison",
-  description: "Comparing PrepAssist and Unacademy's AI tools for UPSC prep? See how each handles notes, mains evaluation & mock tests. Read on.",
+  title: servicesMetadata['prepassist-vs-unacademy-ai']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['prepassist-vs-unacademy-ai']?.metaDescription || "",
 };
 
 export default function PrepAssistVsUnacademyAIPage() {

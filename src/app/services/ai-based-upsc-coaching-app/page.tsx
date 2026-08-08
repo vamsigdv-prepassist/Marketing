@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI-Based UPSC Coaching App: What to Look For Before You Commit | PrepAssist",
-  description: "Learn how to choose a genuinely useful AI-based UPSC coaching app. Evaluate features like conceptual teaching, active quizzes, Mains evaluation & pricing.",
+  title: servicesMetadata['ai-based-upsc-coaching-app']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-based-upsc-coaching-app']?.metaDescription || "",
 };
 
 export default function AIBasedUPSCCoachingAppPage() {

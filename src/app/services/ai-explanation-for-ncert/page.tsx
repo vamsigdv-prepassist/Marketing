@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI Explanation for NCERT: Deep Learning & Concept Clarity | PrepAssist",
-  description: "Master foundational NCERT textbooks for UPSC with AI explanations. Unpack compressed history, economics & polity passages into clear knowledge with custom PDF quizzes.",
+  title: servicesMetadata['ai-explanation-for-ncert']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-explanation-for-ncert']?.metaDescription || "",
 };
 
 export default function AIExplanationForNCERTPage() {

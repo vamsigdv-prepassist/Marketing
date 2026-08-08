@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI for Economy UPSC: Making the Toughest Subject Finally Click | PrepAssist",
-  description: "Master Indian Economy for UPSC Prelims & Mains using AI. Learn economic concepts before jargon, link Budget & RBI news, and evaluate Mains answers.",
+  title: servicesMetadata['ai-for-economy-upsc']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-for-economy-upsc']?.metaDescription || "",
 };
 
 export default function AIForEconomyUPSCPage() {

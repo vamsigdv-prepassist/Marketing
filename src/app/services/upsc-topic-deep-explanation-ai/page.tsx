@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC Topic Deep Explanation AI: Beyond the Surface | PrepAssist",
-  description: "Gain multi-dimensional conceptual depth for UPSC Prelims & Mains using AI. Explore causes, effects, connections, custom PDF quizzes & Mains feedback.",
+  title: servicesMetadata['upsc-topic-deep-explanation-ai']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-topic-deep-explanation-ai']?.metaDescription || "",
 };
 
 export default function UPSCTopicDeepExplanationAIPage() {

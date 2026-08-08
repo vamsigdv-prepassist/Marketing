@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI Tutor for UPSC: Your 24x7 Study Partner That Never Sleeps | PrepAssist",
-  description: "Get 24x7 instant doubt resolution, Mains answer evaluation, and structured study plans with an AI tutor built specifically for UPSC CSE aspirants.",
+  title: servicesMetadata['ai-tutor-for-upsc']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-tutor-for-upsc']?.metaDescription || "",
 };
 
 export default function AITutorForUPSCPage() {

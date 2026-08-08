@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI-Powered UPSC Study Platform: Under One Roof | PrepAssist",
-  description: "Experience a unified AI-powered UPSC study platform connecting concept explanations, custom PDF quizzes, Mains answer evaluation & progress tracking.",
+  title: servicesMetadata['ai-powered-upsc-study-platform']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-powered-upsc-study-platform']?.metaDescription || "",
 };
 
 export default function AIPoweredUPSCStudyPlatformPage() {

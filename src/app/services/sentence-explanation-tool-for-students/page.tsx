@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "Sentence Explanation Tool for Students: Field Guide | PrepAssist",
-  description: "Master difficult academic sentences: hard vocabulary, complex clauses, assumed context & implied subtext with AI. Generate PDF quizzes & refine Mains writing.",
+  title: servicesMetadata['sentence-explanation-tool-for-students']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['sentence-explanation-tool-for-students']?.metaDescription || "",
 };
 
 export default function SentenceExplanationToolForStudentsPage() {

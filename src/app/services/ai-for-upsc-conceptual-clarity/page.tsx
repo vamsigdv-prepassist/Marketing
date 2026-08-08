@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI for UPSC Conceptual Clarity: Diagnose & Fix Gaps | PrepAssist",
-  description: "Diagnose and fix conceptual clarity gaps in UPSC prep. Move beyond rote definitions, distinguish related concepts, build connections & test with PDF quizzes.",
+  title: servicesMetadata['ai-for-upsc-conceptual-clarity']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-for-upsc-conceptual-clarity']?.metaDescription || "",
 };
 
 export default function AIForUPSCConceptualClarityPage() {

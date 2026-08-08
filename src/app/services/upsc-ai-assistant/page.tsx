@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC AI Assistant: How a Digital Sidekick Reshapes Your Prep Day | PrepAssist",
-  description: "Experience how a UPSC AI assistant optimizes a full study day from morning plan creation to midday current affairs, evening Mains answer evaluation, and night analytics.",
+  title: servicesMetadata['upsc-ai-assistant']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-ai-assistant']?.metaDescription || "",
 };
 
 export default function UPSCAIAssistantPage() {

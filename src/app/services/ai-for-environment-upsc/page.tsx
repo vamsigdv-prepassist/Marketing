@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI for Environment UPSC: Turning a Sprawling Subject Into Steady Marks | PrepAssist",
-  description: "Master UPSC Environment & Ecology for Prelims and Mains using AI. Filter climate news, generate active recall quizzes, and evaluate Mains answers.",
+  title: servicesMetadata['ai-for-environment-upsc']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-for-environment-upsc']?.metaDescription || "",
 };
 
 export default function AIForEnvironmentUPSCPage() {

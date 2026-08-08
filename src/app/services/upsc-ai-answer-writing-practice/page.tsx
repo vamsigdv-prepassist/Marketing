@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC AI Answer Writing Practice Tool | PrepAssist",
-  description: "Improve your UPSC answer writing with AI-driven practice & feedback. Structured prompts, instant review. Start practicing now.",
+  title: servicesMetadata['upsc-ai-answer-writing-practice']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-ai-answer-writing-practice']?.metaDescription || "",
 };
 
 export default function UPSCAIAnswerWritingPracticePage() {

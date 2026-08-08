@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "Best AI Tool for UPSC Preparation Online | PrepAssist",
-  description: "Discover the best AI tool for UPSC preparation. PrepAssist combines notes, quizzes & answer evaluation in one platform. Start free.",
+  title: servicesMetadata['best-ai-tool-for-upsc-preparation']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['best-ai-tool-for-upsc-preparation']?.metaDescription || "",
 };
 
 export default function BestAIToolForUPSCPreparationPage() {

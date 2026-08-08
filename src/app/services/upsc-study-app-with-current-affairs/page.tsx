@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC Study App with Current Affairs | PrepAssist",
-  description: "PrepAssist keeps your UPSC prep current with AI-generated current affairs notes & quizzes. Download the study app now.",
+  title: servicesMetadata['upsc-study-app-with-current-affairs']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-study-app-with-current-affairs']?.metaDescription || "",
 };
 
 export default function UPSCStudyAppWithCurrentAffairsPage() {

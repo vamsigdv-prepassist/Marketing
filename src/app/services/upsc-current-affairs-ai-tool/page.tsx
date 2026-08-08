@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC Current Affairs AI Tool for Aspirants | PrepAssist",
-  description: "Stay updated with an AI tool built for UPSC current affairs. Daily summaries, quizzes & notes generated automatically. Try it.",
+  title: servicesMetadata['upsc-current-affairs-ai-tool']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-current-affairs-ai-tool']?.metaDescription || "",
 };
 
 export default function UPSCCurrentAffairsAIToolPage() {

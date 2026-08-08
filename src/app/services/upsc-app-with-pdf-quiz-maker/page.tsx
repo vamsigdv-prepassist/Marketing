@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "UPSC App with PDF Quiz Maker | Try PrepAssist Now",
-  description: "PrepAssist lets you convert any PDF into a UPSC quiz instantly using AI. Study smarter with auto-generated questions. Try free.",
+  title: servicesMetadata['upsc-app-with-pdf-quiz-maker']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['upsc-app-with-pdf-quiz-maker']?.metaDescription || "",
 };
 
 export default function UPSCAppWithPDFQuizMakerPage() {

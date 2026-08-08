@@ -3,9 +3,11 @@ import { CheckCircle2, Sparkles, HelpCircle, ArrowRight, ShieldCheck, Zap, Targe
 import Link from "next/link";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI-Based Concept Builder UPSC: Constructing Knowledge | PrepAssist",
-  description: "Construct durable UPSC knowledge from ground up. Lay solid foundations, connect concepts across syllabus, generate PDF quizzes & evaluate Mains answers.",
+  title: servicesMetadata['ai-based-concept-builder-upsc']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-based-concept-builder-upsc']?.metaDescription || "",
 };
 
 export default function AIBasedConceptBuilderUPSCPage() {

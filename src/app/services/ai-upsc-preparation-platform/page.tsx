@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 
+import { servicesMetadata } from "@/lib/constants/servicesMetadata";
+
 export const metadata: Metadata = {
-  title: "AI UPSC Preparation Platform for Aspirants | PrepAssist",
-  description: "Explore an AI UPSC preparation platform built for serious aspirants. Notes, mock tests & mains evaluation in one place. Start today.",
+  title: servicesMetadata['ai-upsc-preparation-platform']?.metaTitle || "PrepAssist",
+  description: servicesMetadata['ai-upsc-preparation-platform']?.metaDescription || "",
 };
 
 export default function AIUPSCPreparationPlatformPage() {
