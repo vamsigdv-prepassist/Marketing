@@ -31,6 +31,627 @@ export default function ServicesPage() {
         {/* Services Grid */}
         <div className="w-full max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 animate-mobile-enter" style={{ animationDelay: "100ms" }}>
           
+          {/* New Card: Topic-Wise Quiz UPSC App */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                Topic-Wise Quiz UPSC App: The Power of Testing One Topic at a Time
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                PrepAssist offers topic-wise UPSC quizzes so aspirants can test and strengthen understanding subject by subject.
+              </p>
+              <Link
+                href="/services/topic-wise-quiz-upsc-app"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: AI Generated MCQ UPSC */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                AI-Generated MCQ UPSC: Answering the Doubts Aspirants Have About Them
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                PrepAssist's AI generates fresh, exam-relevant MCQs for UPSC preparation, helping aspirants test knowledge continuously.
+              </p>
+              <Link
+                href="/services/ai-generated-mcq-upsc"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: Best UPSC Quiz App */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                Best UPSC Quiz App: A Practical Checklist for Choosing Well
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                PrepAssist is the go-to UPSC quiz app for aspirants, offering AI-generated questions across every subject and difficulty level.
+              </p>
+              <Link
+                href="/services/best-upsc-quiz-app"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: UPSC Prelims Practice Test App */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                UPSC Prelims Practice Test App: Why Regular Practice Beats Last-Minute Cramming
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Practice for UPSC prelims with PrepAssist's dedicated test app, offering realistic questions and instant performance feedback.
+              </p>
+              <Link
+                href="/services/upsc-prelims-practice-test-app"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: Auto Quiz From Study Material */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                Auto Quiz From Study Material: Reclaiming the Hours You Spend Making Questions
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                PrepAssist automatically generates quizzes from your study material, saving time while reinforcing what you've just learned.
+              </p>
+              <Link
+                href="/services/auto-quiz-from-study-material"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: Convert PDF to MCQ UPSC */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                Convert PDF to MCQ UPSC: What Separates a Good Question From a Poor One
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Convert any UPSC study PDF into MCQs instantly with PrepAssist's AI, making self-testing fast, easy, and syllabus-relevant.
+              </p>
+              <Link
+                href="/services/convert-pdf-to-mcq-upsc"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+          
+          {/* New Card: PDF to Quiz Generator */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                PDF to Quiz Generator: How a Document Becomes a Practice Set
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Turn any study PDF into a quiz instantly with PrepAssist's AI-powered generator, perfect for quick self-testing and revision.
+              </p>
+              <Link
+                href="/services/pdf-to-quiz-generator"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+          
+          {/* New Card: UPSC Mock Test Generator AI */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                UPSC Mock Test Generator AI: The Anatomy of a Well-Built Practice Test
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Generate customized UPSC mock tests instantly with PrepAssist's AI, tailored to your syllabus coverage and preparation level.
+              </p>
+              <Link
+                href="/services/upsc-mock-test-generator-ai"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: AI Quiz Generator for UPSC */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                AI Quiz Generator for UPSC: The Range of Questions It Can Build
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                PrepAssist's AI quiz generator creates UPSC-focused questions instantly, helping you test understanding across every topic.
+              </p>
+              <Link
+                href="/services/ai-quiz-generator-upsc"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: UPSC Quiz from PDF */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                UPSC Quiz From PDF: Turning Your Own Study Material Into Daily Practice
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Generate UPSC quizzes directly from your PDF notes with PrepAssist, turning static material into active practice instantly.
+              </p>
+              <Link
+                href="/services/upsc-quiz-from-pdf"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: UPSC Prelims Mock Test Online */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                UPSC Prelims Mock Test: What Each Attempt Is Really Teaching You
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Practice with PrepAssist's UPSC prelims mock tests, designed to simulate real exam conditions and sharpen your preparation.
+              </p>
+              <Link
+                href="/services/upsc-prelims-mock-test-online"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: UPSC Test Series Online */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                UPSC Test Series Online: A Program That Carries You to the Exam
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                PrepAssist offers a comprehensive UPSC test series online, helping aspirants practice and track progress across all subjects.
+              </p>
+              <Link
+                href="/services/upsc-test-series-online"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: UPSC AI Document Search Tool */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                UPSC AI Document Search: The End of Hunting Through Your Own Files
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Search across all your UPSC documents instantly with PrepAssist's AI-powered document search, built for fast, accurate retrieval.
+              </p>
+              <Link
+                href="/services/upsc-ai-document-search-tool"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: UPSC Retrieval AI Tool */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                UPSC Retrieval AI Tool: Following a Question From Doubt to Answer
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                PrepAssist's retrieval AI tool pulls accurate, relevant answers from your UPSC study material instantly, whenever you need them.
+              </p>
+              <Link
+                href="/services/upsc-retrieval-ai-tool"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: Personal AI Study Assistant UPSC */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                Personal AI Study Assistant UPSC: A Companion That Knows Your Preparation
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Get a personal AI study assistant for UPSC preparation with PrepAssist, offering tailored explanations and round-the-clock support.
+              </p>
+              <Link
+                href="/services/personal-ai-study-assistant-upsc"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: AI-Powered Study Database UPSC */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                AI-Powered Study Database UPSC: Treating Your Preparation as Data You Can Query
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                PrepAssist's AI-powered study database organizes UPSC material for fast retrieval, helping aspirants study smarter, not harder.
+              </p>
+              <Link
+                href="/services/ai-powered-study-database-upsc"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: UPSC Cloud Notes With AI Search */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                UPSC Cloud Notes With AI Search: Finding the Right Note the Moment You Need It
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Access your UPSC notes from anywhere with PrepAssist's cloud storage and AI-powered search, finding exactly what you need instantly.
+              </p>
+              <Link
+                href="/services/upsc-cloud-notes-ai-search"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: Smart UPSC Study Vault */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                Smart UPSC Study Vault: One Trusted Place for Everything You Learn
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Store and organize all your UPSC study material in PrepAssist's smart study vault, searchable and AI-enhanced for faster revision.
+              </p>
+              <Link
+                href="/services/smart-upsc-study-vault"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: UPSC Knowledge Base AI */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                UPSC Knowledge Base AI: Building a Connected Body of Understanding Over Time
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                PrepAssist builds a personalized UPSC knowledge base with AI, organizing your study material for quick, searchable access.
+              </p>
+              <Link
+                href="/services/upsc-knowledge-base-ai"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: Chat With PDF UPSC */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                Chat With PDF UPSC: Studying a Document as a Conversation
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Chat directly with your UPSC study PDFs using PrepAssist's AI, turning static notes into an interactive learning conversation.
+              </p>
+              <Link
+                href="/services/chat-with-pdf-upsc"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: Upload PDF and Ask Questions AI */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                Upload PDF and Ask Questions AI: Turning Any Document Into a Study Session
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Upload your UPSC study PDFs to PrepAssist and ask AI questions directly, getting instant, accurate answers from your own material.
+              </p>
+              <Link
+                href="/services/upload-pdf-ask-questions-ai"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: AI UPSC Notes App */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                AI UPSC Notes App: Rethinking the Whole Life of a Note
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                Organize and understand your UPSC notes better with PrepAssist's AI-powered notes app, built for structured, exam-focused learning.
+              </p>
+              <Link
+                href="/services/ai-upsc-notes-app"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* New Card: Smart Explanation App */}
+          <motion.div
+            whileHover={{ y: -8, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="bg-white p-8 rounded-[2rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] border border-slate-100 relative overflow-hidden group transition-all duration-300 flex flex-col items-center text-center"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-emerald-50/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="relative z-10 flex flex-col h-full items-center w-full">
+              <div className="w-16 h-16 rounded-2xl bg-indigo-50/50 flex items-center justify-center mb-6 text-[#6366f1] border border-indigo-100/50 group-hover:scale-110 group-hover:bg-[#6366f1] group-hover:text-white transition-all duration-300 shadow-sm">
+                <Sparkles size={28} />
+              </div>
+              <h2 className="text-2xl font-black mb-3 text-[#0f172a] group-hover:text-[#6366f1] transition-colors tracking-tight">
+                Smart Explanation App UPSC: What Actually Makes an Explanation Smart
+              </h2>
+              <p className="text-slate-500 mb-8 flex-grow leading-relaxed font-medium">
+                PrepAssist's smart explanation app breaks down UPSC topics clearly, helping aspirants build genuine understanding.
+              </p>
+              <Link
+                href="/services/smart-explanation-app-upsc"
+                className="w-full flex items-center justify-center bg-[#6366f1] text-white font-bold py-3.5 rounded-full hover:bg-indigo-600 transition-all shadow-[0_8px_20px_rgba(99,102,241,0.3)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.4)] hover:-translate-y-0.5 cursor-pointer"
+              >
+                <span>View details</span>
+                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </motion.div>
+
           {/* Card 1 */}
           <motion.div
             whileHover={{ y: -8, scale: 1.02 }}

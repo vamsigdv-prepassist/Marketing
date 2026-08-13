@@ -4,6 +4,102 @@ export interface ServiceMetadata {
 }
 
 export const servicesMetadata: Record<string, ServiceMetadata> = {
+  'topic-wise-quiz-upsc-app': {
+    metaTitle: 'Topic-Wise Quiz App for UPSC Exam Online | PrepAssist India',
+    metaDescription: 'PrepAssist offers topic-wise UPSC quizzes so aspirants can test and strengthen understanding subject by subject.'
+  },
+  'upsc-test-from-notes-ai': {
+    metaTitle: 'UPSC Test from Notes with AI Online | PrepAssist India Now',
+    metaDescription: 'Turn your own UPSC notes into practice tests instantly with PrepAssist\'s AI, reinforcing what you\'ve studied in real time.'
+  },
+  'ai-generated-mcq-upsc': {
+    metaTitle: 'AI Generated MCQ for UPSC Exam Prep | PrepAssist India Now',
+    metaDescription: 'PrepAssist\'s AI generates fresh, exam-relevant MCQs for UPSC preparation, helping aspirants test knowledge continuously.'
+  },
+  'best-upsc-quiz-app': {
+    metaTitle: 'Best UPSC Quiz App Online | PrepAssist India Study Portal',
+    metaDescription: 'PrepAssist is the go-to UPSC quiz app for aspirants, offering AI-generated questions across every subject and difficulty level.'
+  },
+  'upsc-prelims-practice-test-app': {
+    metaTitle: 'UPSC Prelims Practice Test App Online | PrepAssist India',
+    metaDescription: 'Practice for UPSC prelims with PrepAssist\'s dedicated test app, offering realistic questions and instant performance feedback.'
+  },
+  'auto-quiz-from-study-material': {
+    metaTitle: 'Auto Quiz from Study Material Online | PrepAssist India',
+    metaDescription: 'PrepAssist automatically generates quizzes from your study material, saving time while reinforcing what you\'ve just learned.'
+  },
+  'convert-pdf-to-mcq-upsc': {
+    metaTitle: 'Convert PDF to MCQ for UPSC Exam Online | PrepAssist India',
+    metaDescription: 'Convert any UPSC study PDF into MCQs instantly with PrepAssist\'s AI, making self-testing fast, easy, and syllabus-relevant.'
+  },
+  'upsc-mock-test-generator-ai': {
+    metaTitle: 'UPSC Mock Test Generator AI Tool Online | PrepAssist India',
+    metaDescription: 'Generate customized UPSC mock tests instantly with PrepAssist\'s AI, tailored to your syllabus coverage and preparation level.'
+  },
+  'ai-quiz-generator-upsc': {
+    metaTitle: 'AI Quiz Generator for UPSC Exam Prep | PrepAssist India',
+    metaDescription: 'PrepAssist\'s AI quiz generator creates UPSC-focused questions instantly, helping you test understanding across every topic.'
+  },
+  'upsc-quiz-from-pdf': {
+    metaTitle: 'UPSC Quiz from PDF Generator Online | PrepAssist India Now',
+    metaDescription: 'Generate UPSC quizzes directly from your PDF notes with PrepAssist, turning static material into active practice instantly.'
+  },
+  'pdf-to-quiz-generator': {
+    metaTitle: 'PDF to Quiz Generator Online | PrepAssist India Portal Now',
+    metaDescription: 'Turn any study PDF into a quiz instantly with PrepAssist\'s AI-powered generator, perfect for quick self-testing and revision.'
+  },
+  'upsc-prelims-mock-test-online': {
+    metaTitle: 'UPSC Prelims Mock Test Online | PrepAssist India Portal',
+    metaDescription: 'Practice with PrepAssist\'s UPSC prelims mock tests, designed to simulate real exam conditions and sharpen your preparation.'
+  },
+  'upsc-test-series-online': {
+    metaTitle: 'UPSC Test Series Online for Exam Prep | PrepAssist India',
+    metaDescription: 'PrepAssist offers a comprehensive UPSC test series online, helping aspirants practice and track progress across all subjects.'
+  },
+  'upsc-ai-document-search-tool': {
+    metaTitle: 'UPSC AI Document Search Tool Online | PrepAssist India Now',
+    metaDescription: 'Search across all your UPSC documents instantly with PrepAssist\'s AI-powered document search, built for fast, accurate retrieval.'
+  },
+  'upsc-retrieval-ai-tool': {
+    metaTitle: 'UPSC Retrieval AI Tool Online | PrepAssist India Portal',
+    metaDescription: 'PrepAssist\'s retrieval AI tool pulls accurate, relevant answers from your UPSC study material instantly, whenever you need them.'
+  },
+  'personal-ai-study-assistant-upsc': {
+    metaTitle: 'Personal AI Study Assistant for UPSC | PrepAssist India',
+    metaDescription: 'Get a personal AI study assistant for UPSC preparation with PrepAssist, offering tailored explanations and round-the-clock support.'
+  },
+  'ai-powered-study-database-upsc': {
+    metaTitle: 'AI-Powered Study Database for UPSC Exam | PrepAssist India',
+    metaDescription: 'PrepAssist\'s AI-powered study database organizes UPSC material for fast retrieval, helping aspirants study smarter, not harder.'
+  },
+  'upsc-cloud-notes-ai-search': {
+    metaTitle: 'UPSC Cloud Notes with AI Search Online | PrepAssist India',
+    metaDescription: 'Access your UPSC notes from anywhere with PrepAssist\'s cloud storage and AI-powered search, finding exactly what you need instantly.'
+  },
+  'smart-upsc-study-vault': {
+    metaTitle: 'Smart UPSC Study Vault Online | PrepAssist India Portal',
+    metaDescription: 'Store and organize all your UPSC study material in PrepAssist\'s smart study vault, searchable and AI-enhanced for faster revision.'
+  },
+  'upsc-knowledge-base-ai': {
+    metaTitle: 'UPSC Knowledge Base AI Tool Online | PrepAssist India Now',
+    metaDescription: 'PrepAssist builds a personalized UPSC knowledge base with AI, organizing your study material for quick, searchable access.'
+  },
+  'chat-with-pdf-upsc': {
+    metaTitle: 'Chat with PDF for UPSC Preparation Online | PrepAssist India',
+    metaDescription: 'Chat directly with your UPSC study PDFs using PrepAssist\'s AI, turning static notes into an interactive learning conversation.'
+  },
+  'upload-pdf-ask-questions-ai': {
+    metaTitle: 'Upload PDF and Ask Questions with AI | PrepAssist India',
+    metaDescription: 'Upload your UPSC study PDFs to PrepAssist and ask AI questions directly, getting instant, accurate answers from your own material.'
+  },
+  'ai-upsc-notes-app': {
+    metaTitle: 'AI UPSC Notes App for Exam Preparation | PrepAssist India',
+    metaDescription: 'Organize and understand your UPSC notes better with PrepAssist\'s AI-powered notes app, built for structured, exam-focused learning.'
+  },
+  'smart-explanation-app-upsc': {
+    metaTitle: 'Smart Explanation App for UPSC Online | PrepAssist India',
+    metaDescription: 'PrepAssist\'s smart explanation app breaks down UPSC topics clearly, helping aspirants build genuine understanding, not just memorization.'
+  },
   'upsc-topic-wise-ai-explanation': {
     metaTitle: 'UPSC Topic Wise AI Explanation Tool | PrepAssist India Now',
     metaDescription: 'Get topic-wise AI explanations for UPSC preparation with PrepAssist, covering every subject with structured, in-depth clarity.'
