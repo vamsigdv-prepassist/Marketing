@@ -22,7 +22,7 @@ export default function ServicesPage() {
       {/* Main Content */}
       <div className="flex-1 flex flex-col items-center justify-center p-6 py-16">
         {/* Heading */}
-        <div className="text-center mb-12 animate-mobile-enter">
+        <div className="text-center mt-8 mb-12 animate-mobile-enter">
           <h1 className="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
             Our Services
           </h1>
@@ -30,7 +30,7 @@ export default function ServicesPage() {
 
         {/* Services Grid */}
         <div className="w-full max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 animate-mobile-enter" style={{ animationDelay: "100ms" }}>
-          
+
           {/* New Card: Topic-Wise Quiz UPSC App */}
           <motion.div
             whileHover={{ y: -8, scale: 1.02 }}
@@ -192,7 +192,7 @@ export default function ServicesPage() {
               </Link>
             </div>
           </motion.div>
-          
+
           {/* New Card: PDF to Quiz Generator */}
           <motion.div
             whileHover={{ y: -8, scale: 1.02 }}
@@ -219,7 +219,7 @@ export default function ServicesPage() {
               </Link>
             </div>
           </motion.div>
-          
+
           {/* New Card: UPSC Mock Test Generator AI */}
           <motion.div
             whileHover={{ y: -8, scale: 1.02 }}

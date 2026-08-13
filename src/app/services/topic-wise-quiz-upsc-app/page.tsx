@@ -21,19 +21,11 @@ export default function TopicWiseQuizUPSCAppPage() {
 
       <main className="pt-24 pb-16 px-6 max-w-4xl mx-auto relative z-10">
         
-        {/* Back Button */}
-        <div className="mb-8 animate-mobile-enter">
-          <Link href="/services" className="inline-flex items-center text-sm font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to All Services
-          </Link>
-        </div>
+        
 
         {/* Hero Section */}
         <div className="mb-16 animate-mobile-enter" style={{ animationDelay: "100ms" }}>
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-xs font-bold text-indigo-700 mb-6 tracking-widest uppercase">
-            <Sparkles className="w-3 h-3 text-amber-500" /> PrepAssist AI
-          </div>
+          
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 mb-6 leading-tight">
             Topic-Wise Quiz UPSC App: The Power of Testing One Topic at a Time
           </h1>
