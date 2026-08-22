@@ -44,6 +44,16 @@ const nextConfig = {
         source: '/dashboard',
         destination: 'https://dashboard.prepassist.in/dashboard',
         permanent: false,
+      },
+      {
+        source: '/admin',
+        destination: 'https://dashboard.prepassist.in/admin',
+        permanent: false,
+      },
+      {
+        source: '/dashboard/admin',
+        destination: 'https://dashboard.prepassist.in/admin',
+        permanent: false,
       }
     ];
   },

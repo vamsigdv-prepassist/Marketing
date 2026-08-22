@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { CustomAppStoreButton, CustomGooglePlayButton } from "@/components/StoreButtons";
+import ReelsSection from "@/components/ReelsSection";
 import Header from "@/components/Header";
 import { handleMobileRedirect } from "@/lib/mobile_redirect";
 
@@ -112,6 +113,9 @@ export default function Home() {
 
                </div>
             </div>
+
+            {/* Reels Section */}
+            <ReelsSection />
 
             {/* Brand Banner */}
             <section className="w-full py-16 flex flex-col items-center justify-center text-center mb-32">
