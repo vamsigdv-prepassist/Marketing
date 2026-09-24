@@ -5,6 +5,131 @@ export interface ServiceMetadata {
 }
 
 export const servicesMetadata: Record<string, ServiceMetadata> = {
+  'upsc-smart-alert-current-affairs': {
+    metaTitle: "UPSC Smart Alert Current Affairs | Only What You Truly Need",
+    metaDescription: "Smart alerts that fire only when a story affects your UPSC syllabus. No endless feed, just the developments that change what you need to know and write.",
+    publishedAt: '2026-09-19T18:13:57+05:30',
+  },
+  'current-affairs-to-mains-notes': {
+    metaTitle: "Current Affairs to Mains Notes | One Step, No Rewriting",
+    metaDescription: "Turn current affairs into mains notes in one step. Each story becomes context, arguments and examples filed under the GS topic where you will actually use it.",
+    publishedAt: '2026-09-19T18:12:50+05:30',
+  },
+  'upsc-mains-notes-update': {
+    metaTitle: "UPSC Mains Notes Update | Keep Answers Current Year Round",
+    metaDescription: "Keep UPSC mains notes current without rewriting them. New developments attach to the topic you already noted, so every answer stays as fresh as the news.",
+    publishedAt: '2026-09-19T18:11:15+05:30',
+  },
+  'auto-update-upsc-notes': {
+    metaTitle: "Auto Update UPSC Notes | Your Notes Stay Current All Year",
+    metaDescription: "Notes that update themselves. When a topic you have noted moves on, PrepAssist adds the development, so your revision material never goes stale mid cycle.",
+    publishedAt: '2026-09-19T18:10:25+05:30',
+  },
+  'upsc-current-affairs-alert-app': {
+    metaTitle: "UPSC Current Affairs Alert App | Never Miss a Big Story",
+    metaDescription: "Get alerts when a story matters for UPSC. PrepAssist flags developments on topics you track and files the summary into your notes before you open the app.",
+    publishedAt: '2026-09-19T18:09:22+05:30',
+  },
+  'daily-current-affairs-upsc-app': {
+    metaTitle: "Daily Current Affairs UPSC App | For Android and iOS Users",
+    metaDescription: "A daily current affairs app for UPSC aspirants. Summaries mapped to the syllabus, saved as notes automatically and synced between your phone and the web.",
+    publishedAt: '2026-09-19T18:08:15+05:30',
+  },
+  'upsc-mains-notes-current-affairs': {
+    metaTitle: "UPSC Mains Notes Current Affairs | Linked to Every Topic",
+    metaDescription: "Keep your mains notes and current affairs in one place. PrepAssist attaches each new story to the syllabus topic it supports, so revision pulls both together.",
+    publishedAt: '2026-09-19T18:05:05+05:30',
+  },
+  'upsc-current-affairs-for-mains': {
+    metaTitle: "UPSC Current Affairs for Mains | Answer Ready Material Daily",
+    metaDescription: "Current affairs shaped for UPSC mains, not just headlines. Each item comes with context, arguments and examples you can lift straight into a GS paper answer.",
+    publishedAt: '2026-09-19T18:03:57+05:30',
+  },
+  'upsc-current-affairs-daily': {
+    metaTitle: "UPSC Current Affairs Daily | Read, Note and Revise Fast",
+    metaDescription: "Daily UPSC current affairs, summarised and mapped to the syllabus. Read the brief, keep the note and build mains material without opening another document.",
+    publishedAt: '2026-09-19T18:02:53+05:30',
+  },
+  'news-to-notes-upsc-app': {
+    metaTitle: "News to Notes UPSC App | Daily Reading, Filed Instantly",
+    metaDescription: "Turn the day's news into UPSC notes on your phone. PrepAssist summarises each story, tags it to the syllabus and adds it to your growing mains answer bank.",
+    publishedAt: '2026-09-19T18:01:45+05:30',
+  },
+  'ai-summariser-for-upsc-blogs': {
+    metaTitle: "AI Summariser for UPSC Blogs | Keep Only What Truly Matters",
+    metaDescription: "Summarise UPSC blogs with AI that knows the syllabus. PrepAssist keeps the arguments, data and examples worth quoting and drops the rest into a clean note.",
+    publishedAt: '2026-09-19T18:00:43+05:30',
+  },
+  'upsc-notes-builder-ai': {
+    metaTitle: "UPSC Notes Builder AI | Organise Everything by Syllabus",
+    metaDescription: "Build your UPSC notes with AI instead of by hand. Every note lands under the correct GS paper and topic, searchable, editable and synced across your devices.",
+    publishedAt: '2026-09-19T17:59:33+05:30',
+  },
+  'blog-to-notes-ai-tool': {
+    metaTitle: "Blog to Notes AI Tool | Built for UPSC Exam Preparation",
+    metaDescription: "A blog to notes AI tool built around the UPSC syllabus. Paste a URL or the text itself and get a clean structured note instead of highlights you never revisit.",
+    publishedAt: '2026-09-19T17:58:33+05:30',
+  },
+  'upsc-content-to-notes-converter': {
+    metaTitle: "UPSC Content to Notes Converter | Any Source, One Format",
+    metaDescription: "Convert any content into UPSC notes. PDFs, articles, blogs and news pieces come out in one structured format, tagged by syllabus topic and ready to revise.",
+    publishedAt: '2026-09-19T17:57:23+05:30',
+  },
+  'automated-upsc-notes-from-blogs': {
+    metaTitle: "Automated UPSC Notes from Blogs | No More Manual Rewriting",
+    metaDescription: "Stop rewriting blogs by hand. PrepAssist reads the piece, extracts what UPSC actually asks about and builds notes filed under the right General Studies paper.",
+    publishedAt: '2026-09-19T17:56:12+05:30',
+  },
+  'one-click-notes-upsc': {
+    metaTitle: "One Click Notes for UPSC | Article In, Revision Notes Out",
+    metaDescription: "Make UPSC notes in one click. Drop in a link, PDF or block of text and PrepAssist returns structured, syllabus tagged notes you can revise on any device.",
+    publishedAt: '2026-09-19T17:55:11+05:30',
+  },
+  'ai-notes-from-web-articles': {
+    metaTitle: "AI Notes from Web Articles | Made for UPSC Aspirants Daily",
+    metaDescription: "Turn web articles into study notes with AI. PrepAssist strips the padding, keeps the facts and arguments, and files each note under the UPSC topic it fits.",
+    publishedAt: '2026-09-19T17:54:09+05:30',
+  },
+  'smart-notes-generator-upsc': {
+    metaTitle: "Smart Notes Generator UPSC | Syllabus Mapped in Seconds",
+    metaDescription: "A smart notes generator for UPSC aspirants. Feed it a PDF, article or transcript and get structured notes mapped to GS papers, ready to revise or expand.",
+    publishedAt: '2026-09-19T17:52:56+05:30',
+  },
+  'summarise-blog-for-upsc-notes': {
+    metaTitle: "Summarise Blog for UPSC Notes | One Paste, Clean Output",
+    metaDescription: "Paste any blog into PrepAssist and get a UPSC ready summary. Key arguments, data points and examples extracted and arranged under the right syllabus topic.",
+    publishedAt: '2026-09-19T17:51:48+05:30',
+  },
+  'upsc-notes-from-current-affairs': {
+    metaTitle: "UPSC Notes from Current Affairs | Daily Briefs to Mains",
+    metaDescription: "Convert daily current affairs into UPSC notes without rewriting anything. Each story is summarised, tagged to the syllabus and added to your mains material.",
+    publishedAt: '2026-09-19T17:50:43+05:30',
+  },
+  'auto-notes-from-articles-upsc': {
+    metaTitle: "Auto Notes from Articles UPSC | Read Once, Revise Often",
+    metaDescription: "Turn long articles into UPSC ready notes automatically. PrepAssist pulls out the facts, arguments and examples that matter and files them by syllabus head.",
+    publishedAt: '2026-09-19T17:49:21+05:30',
+  },
+  'ai-notes-maker-for-upsc': {
+    metaTitle: "AI Notes Maker for UPSC | From Source Text to Revision Notes",
+    metaDescription: "An AI notes maker built for UPSC aspirants. Paste an article or upload a PDF and get syllabus mapped notes in seconds, ready for prelims revision and mains.",
+    publishedAt: '2026-09-19T17:48:09+05:30',
+  },
+  'best-notes-app-for-upsc': {
+    metaTitle: "Best Notes App for UPSC | Built for Civil Services Prep",
+    metaDescription: "Looking for the best notes app for UPSC? PrepAssist organises notes by syllabus topic, links them to current affairs and syncs between your phone and the web.",
+    publishedAt: '2026-09-19T17:47:01+05:30',
+  },
+  'upsc-notes-making-app': {
+    metaTitle: "UPSC Notes Making App | Turn Any Source Into Clean Notes",
+    metaDescription: "PrepAssist is a notes making app built for UPSC aspirants. Upload a PDF, article or syllabus and get structured notes you can revise, search and sync anywhere.",
+    publishedAt: '2026-09-19T17:45:40+05:30',
+  },
+  'upsc-prelims-ai-test-series': {
+    metaTitle: "UPSC Prelims AI Test Series | Practice MCQs, Instant Scores",
+    metaDescription: "Take AI generated UPSC prelims tests built from the syllabus you upload. Unlimited MCQs, instant scoring and analytics that show where marks are leaking.",
+    publishedAt: '2026-09-19T17:41:29+05:30',
+  },
   'topic-wise-quiz-upsc-app': {
     metaTitle: "Topic-Wise Quiz App for UPSC Exam Online | PrepAssist India",
     metaDescription: "PrepAssist offers topic-wise UPSC quizzes so aspirants can test and strengthen understanding subject by subject.",

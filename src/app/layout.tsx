@@ -21,9 +21,6 @@ export const metadata: Metadata = {
   authors: [{ name: "PrepAssist Team", url: "https://prepassist.in" }],
   creator: "PrepAssist",
   publisher: "PrepAssist",
-  alternates: {
-    canonical: "/",
-  },
   robots: {
     index: true,
     follow: true,
@@ -61,6 +58,9 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
+  },
+  verification: {
+    google: "bFPMtqzL3GPf_J0LklCKDD3dw_krJzf2a11OcX69eLE",
   },
 };
 

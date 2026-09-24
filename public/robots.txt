@@ -1,0 +1,59 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /delete-account
+Disallow: /admin
+Disallow: /login
+
+# Answer Engine & Generative AI Bots (AEO / GEO)
+User-Agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /delete-account
+Disallow: /admin
+Disallow: /login
+
+User-Agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /delete-account
+Disallow: /admin
+Disallow: /login
+
+User-Agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /delete-account
+Disallow: /admin
+Disallow: /login
+
+User-Agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /delete-account
+Disallow: /admin
+Disallow: /login
+
+User-Agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /delete-account
+Disallow: /admin
+Disallow: /login
+
+User-Agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /delete-account
+Disallow: /admin
+Disallow: /login
+
+User-Agent: Meta-ExternalAgent
+Allow: /
+Disallow: /api/
+Disallow: /delete-account
+Disallow: /admin
+Disallow: /login
+
+Host: https://prepassist.in
+Sitemap: https://prepassist.in/sitemap.xml

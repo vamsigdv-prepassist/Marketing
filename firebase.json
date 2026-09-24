@@ -1,16 +1,14 @@
 {
-  "hosting": [
-    {
-      "target": "marketing-prepassist",
-      "source": ".",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "frameworksBackend": {
-        "region": "asia-south1"
-      }
-    }
-  ]
+  "hosting": {
+    "target": "marketing-prepassist",
+    "source": ".",
+    "frameworksBackend": {
+      "region": "us-central1"
+    },
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
 }
